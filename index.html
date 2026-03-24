@@ -114,6 +114,7 @@ body{
 .app-card:nth-child(2){animation-delay:.2s}
 .app-card:nth-child(3){animation-delay:.3s}
 .app-card:nth-child(4){animation-delay:.4s}
+.app-card:nth-child(5){animation-delay:.5s}
 
 .app-card::before{
   content:'';position:absolute;inset:0;
@@ -134,6 +135,7 @@ body{
 .app-card.teal{--glow:rgba(0,229,191,.06);--glow-border:rgba(0,229,191,.3);--glow-shadow:rgba(0,229,191,.08);--accent:var(--accent-teal);}
 .app-card.coral{--glow:rgba(255,107,107,.06);--glow-border:rgba(255,107,107,.3);--glow-shadow:rgba(255,107,107,.08);--accent:var(--accent-coral);}
 .app-card.sky{--glow:rgba(91,184,255,.06);--glow-border:rgba(91,184,255,.3);--glow-shadow:rgba(91,184,255,.08);--accent:var(--accent-sky);}
+.app-card.purple{--glow:rgba(155,95,200,.06);--glow-border:rgba(155,95,200,.3);--glow-shadow:rgba(155,95,200,.08);--accent:#b370d8;}
 
 .app-icon{
   width:72px;height:72px;
@@ -257,7 +259,20 @@ body::after{
 
   <div class="app-grid">
 
-    <div class="app-card sky">
+    <div class="app-card purple">
+      <div class="app-icon-placeholder">🎯</div>
+      <div class="app-info">
+        <div class="app-name">ユキゾウ面接官シミュレーター</div>
+        <span class="app-tag">シミュレーション</span>
+        <p class="app-desc">見た目に騙されるな。本質を見抜け。3人の候補者を面接して最適な人材を採用しよう！スキルを磨いて10ラウンドで最高スコアを目指せ！</p>
+        <div class="app-links">
+          <a class="app-link" href="https://play.google.com/store/apps/details?id=com.yukizou.interviewer">Google Play &rarr;</a>
+          <a class="app-link" href="yukizou-interviewer-privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+    </div>
+
+        <div class="app-card sky">
       <img class="app-icon" src="https://raw.githubusercontent.com/xCryptoCat/hero-company-game/master/game2-app/assets/images/icon.png" alt="ヒロカン" onerror="this.outerHTML='<div class=\'app-icon-placeholder\'>🦺</div>'">
       <div class="app-info">
         <div class="app-name">ヒロカン</div>
