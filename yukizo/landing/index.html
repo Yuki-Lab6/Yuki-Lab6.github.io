@@ -8,13 +8,29 @@
       name="description"
       content="子ゾウの警備員ユキゾウが地下鉄を駆け抜ける2Dランゲーム。App Store と Google Play で配信中。"
     />
-    <link rel="icon" href="../assets/icon.png" />
+    <link rel="canonical" href="https://yuki-lab6.github.io/yukizo/" />
+    <meta property="og:title" content="ユキゾウダッシュ | Yukizo Dash" />
+    <meta
+      property="og:description"
+      content="子ゾウの警備員ユキゾウが地下鉄を駆け抜ける2Dランゲーム。App Store と Google Play で配信中。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuki-lab6.github.io/yukizo/" />
+    <meta property="og:image" content="https://yuki-lab6.github.io/yukizo/landing/assets/gameplay.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ユキゾウダッシュ | Yukizo Dash" />
+    <meta
+      name="twitter:description"
+      content="子ゾウの警備員ユキゾウが地下鉄を駆け抜ける2Dランゲーム。App Store と Google Play で配信中。"
+    />
+    <meta name="twitter:image" content="https://yuki-lab6.github.io/yukizo/landing/assets/gameplay.webp" />
+    <link rel="icon" href="./assets/icon-192.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header" aria-label="サイトナビゲーション">
       <a class="brand" href="#top" aria-label="ユキゾウダッシュ ホーム">
-        <img src="../assets/icon.png" alt="" class="brand-icon" />
+        <img src="./assets/icon-192.png" alt="" class="brand-icon" width="42" height="42" />
         <span>ユキゾウダッシュ</span>
       </a>
       <nav class="nav-links" aria-label="ページ内リンク">
@@ -30,7 +46,7 @@
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-inner">
           <div class="hero-copy">
-            <img class="hero-logo" src="../assets/ui/game-logo.png" alt="ユキゾウ" />
+            <img class="hero-logo" src="./assets/game-logo.webp" alt="ユキゾウ" width="256" height="96" />
             <h1>地下鉄を<br />駆け抜けろ</h1>
             <p class="hero-lead">
               子ゾウの警備員ユキゾウが、コインと落とし物のなぞを追いかける2Dランゲーム。
@@ -41,6 +57,8 @@
                 class="store-button"
                 href="https://apps.apple.com/us/app/ユキゾウダッシュ/id6761814027"
                 aria-label="App Store でユキゾウダッシュを開く"
+                target="_blank"
+                rel="noopener"
               >
                 <span class="store-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" focusable="false">
@@ -56,6 +74,8 @@
                 class="store-button"
                 href="https://play.google.com/store/apps/details?id=com.yukizo.app"
                 aria-label="Google Play でユキゾウダッシュを開く"
+                target="_blank"
+                rel="noopener"
               >
                 <span class="store-icon play" aria-hidden="true">
                   <svg viewBox="0 0 24 24" focusable="false">
@@ -71,13 +91,13 @@
           </div>
 
           <div class="hero-art" aria-label="ユキゾウの地下鉄ランナーアート">
-            <img src="../assets/backgrounds/main.png" alt="地下鉄を走るユキゾウ" />
+            <img src="./assets/yukizo-hero.webp" alt="地下鉄を走るユキゾウ" width="1100" height="1650" />
           </div>
         </div>
 
         <a class="hero-peek" href="#gameplay" aria-label="ゲーム画面を見る">
           <span>実際のゲーム画面</span>
-          <img src="../gamescreen.png" alt="ユキゾウダッシュの実際のゲーム画面" />
+          <img src="./assets/gameplay.webp" alt="ユキゾウダッシュの実際のゲーム画面" width="1200" height="628" />
         </a>
       </section>
 
@@ -95,7 +115,14 @@
             </p>
           </div>
           <figure class="screenshot-frame">
-            <img src="../gamescreen.png" alt="地下鉄ホームを走るユキゾウのゲーム画面" />
+            <img
+              src="./assets/gameplay.webp"
+              alt="地下鉄ホームを走るユキゾウのゲーム画面"
+              width="1200"
+              height="628"
+              loading="lazy"
+              decoding="async"
+            />
             <figcaption>Real gameplay screenshot</figcaption>
           </figure>
         </div>
@@ -104,8 +131,20 @@
       <section class="story section-band alt" id="story">
         <div class="story-grid">
           <div class="story-image-stack" aria-label="ストーリーアート">
-            <img src="../assets/story/story-chapter1-stage1-keyart.jpg" alt="新神戸駅で警備するユキゾウ" />
-            <img src="../assets/story/story-chapter1-stage5-keyart-nezking-imagegen.jpg" alt="ボスに立ち向かうユキゾウ" />
+            <img
+              src="./assets/story-stage1.webp"
+              alt="新神戸駅で警備するユキゾウ"
+              width="960"
+              height="640"
+              decoding="async"
+            />
+            <img
+              src="./assets/story-boss.webp"
+              alt="ボスに立ち向かうユキゾウ"
+              width="960"
+              height="640"
+              decoding="async"
+            />
           </div>
           <div class="story-copy">
             <div class="section-kicker">Story mode</div>
@@ -153,7 +192,7 @@
 
       <section class="download" id="download">
         <div class="download-panel">
-          <img src="../assets/icon.png" alt="" class="download-icon" />
+          <img src="./assets/icon-192.png" alt="" class="download-icon" width="86" height="86" loading="lazy" decoding="async" />
           <div>
             <h2>ユキゾウと地下鉄へ出発しよう</h2>
             <p class="en">Start Yukizo Dash on iPhone, iPad, or Android.</p>
@@ -163,6 +202,8 @@
               class="store-button"
               href="https://apps.apple.com/us/app/ユキゾウダッシュ/id6761814027"
               aria-label="App Store でユキゾウダッシュを開く"
+              target="_blank"
+              rel="noopener"
             >
               <span class="store-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" focusable="false">
@@ -178,6 +219,8 @@
               class="store-button"
               href="https://play.google.com/store/apps/details?id=com.yukizo.app"
               aria-label="Google Play でユキゾウダッシュを開く"
+              target="_blank"
+              rel="noopener"
             >
               <span class="store-icon play" aria-hidden="true">
                 <svg viewBox="0 0 24 24" focusable="false">
@@ -196,7 +239,7 @@
 
     <footer class="site-footer">
       <span>© Yukizo Dash</span>
-      <a href="https://yuki-lab6.github.io/yukizo-privacy.html">プライバシーポリシー</a>
+      <a href="https://yuki-lab6.github.io/yukizo-privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>
     </footer>
   </body>
 </html>
