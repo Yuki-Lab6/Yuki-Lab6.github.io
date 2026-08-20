@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f9fc" />
+    <title>プライバシーポリシー - あのゲーム</title>
+    <meta name="description" content="「あのゲーム」のプライバシーポリシー。Privacy Policy for the game AnoGame." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style>
+      :root {
+        color-scheme: light;
+        --color-ink: #101828;
+        --color-muted: #667085;
+        --color-faint: #98a2b3;
+        --color-energy: #0868f2;
+        --color-energy-deep: #0a4fbf;
+        --color-energy-pale: #d8ecff;
+        --surface-page: #f7f9fc;
+        --surface-card: #ffffff;
+        --surface-sunken: #eef2f8;
+        --border-hairline: rgba(16, 40, 80, 0.09);
+        --font-ui:
+          system-ui, -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP',
+          Meiryo, sans-serif;
+        --font-display: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: clamp(20px, 5vw, 56px) clamp(16px, 5vw, 32px)
+          calc(64px + env(safe-area-inset-bottom, 0px));
+        background: var(--surface-page);
+        color: var(--color-ink);
+        font-family: var(--font-ui);
+        font-size: 16px;
+        line-height: 1.85;
+        text-wrap: pretty;
+        word-break: auto-phrase;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      main {
+        max-width: 44rem;
+        margin-inline: auto;
+      }
+
+      /* --- masthead ------------------------------------------------------ */
+      .masthead {
+        border-bottom: 2px solid var(--color-ink);
+        padding-bottom: 18px;
+        margin-bottom: 8px;
+      }
+
+      .masthead__game {
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        letter-spacing: 0.22em;
+        color: var(--color-energy-deep);
+        margin: 0 0 6px;
+      }
+
+      h1 {
+        font-family: var(--font-display);
+        font-size: clamp(1.75rem, 6vw, 2.4rem);
+        line-height: 1.3;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      .masthead__meta {
+        margin: 14px 0 0;
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        line-height: 1.7;
+      }
+
+      /* --- language switch ----------------------------------------------- */
+      .langswitch {
+        display: flex;
+        gap: 6px;
+        margin: 22px 0 34px;
+      }
+
+      .langswitch button {
+        flex: 1;
+        min-height: 44px;
+        padding: 8px 14px;
+        font: inherit;
+        font-size: 0.9rem;
+        color: var(--color-muted);
+        background: var(--surface-sunken);
+        border: 1px solid var(--border-hairline);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 160ms, color 160ms;
+      }
+
+      .langswitch button[aria-pressed='true'] {
+        background: var(--color-energy);
+        border-color: var(--color-energy);
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .langswitch button:focus-visible {
+        outline: 3px solid var(--color-energy-deep);
+        outline-offset: 2px;
+      }
+
+      /* --- sections ------------------------------------------------------ */
+      .lead {
+        font-size: 1.02rem;
+        color: var(--color-ink);
+        background: var(--surface-card);
+        border: 1px solid var(--border-hairline);
+        border-left: 4px solid var(--color-energy);
+        border-radius: 4px 12px 12px 4px;
+        padding: 18px 20px;
+        margin: 0 0 40px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 0 0 4px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-hairline);
+        display: flex;
+        gap: 14px;
+        align-items: baseline;
+      }
+
+      h2 .num {
+        font-family: var(--font-ui);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--color-energy);
+        flex: none;
+      }
+
+      h3 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin: 24px 0 2px;
+        color: var(--color-energy-deep);
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      ul {
+        margin: 10px 0;
+        padding-left: 1.3em;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      li::marker {
+        color: var(--color-faint);
+      }
+
+      a {
+        color: var(--color-energy-deep);
+        text-underline-offset: 2px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      /* A fact worth not burying: what never leaves the phone. */
+      .note {
+        background: var(--color-energy-pale);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 16px 0;
+        font-size: 0.94rem;
+      }
+
+      /* --- third-party table --------------------------------------------- */
+      .partners {
+        margin: 14px 0;
+        border: 1px solid var(--border-hairline);
+        border-radius: 12px;
+        overflow: hidden;
+        background: var(--surface-card);
+      }
+
+      .partners div {
+        padding: 14px 18px;
+        border-top: 1px solid var(--border-hairline);
+        font-size: 0.94rem;
+      }
+
+      .partners div:first-child {
+        border-top: none;
+      }
+
+      .partners b {
+        display: block;
+        font-size: 0.98rem;
+      }
+
+      .partners span {
+        color: var(--color-muted);
+      }
+
+      footer {
+        border-top: 2px solid var(--color-ink);
+        margin-top: 48px;
+        padding-top: 16px;
+        font-size: 0.82rem;
+        color: var(--color-muted);
+      }
+
+      .back {
+        display: inline-block;
+        margin-top: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--color-energy-deep);
+      }
+
+      .back:hover {
+        text-decoration: underline;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="masthead">
+        <p class="masthead__game">あのゲーム / AnoGame</p>
+        <h1>プライバシーポリシー<br />Privacy Policy</h1>
+        <p class="masthead__meta">
+          アプリID / App ID: <code>com.anogame.app</code><br />
+          制定日 / Effective: 2026年8月20日 · 最終更新 / Last updated: 2026年8月20日
+        </p>
+      </header>
+
+      <div class="langswitch">
+        <button type="button" id="btn-ja" aria-pressed="true" aria-controls="doc-ja">日本語</button>
+        <button type="button" id="btn-en" aria-pressed="false" aria-controls="doc-en">English</button>
+      </div>
+
+      <!-- ================= 日本語 ================= -->
+      <div id="doc-ja" lang="ja">
+        <p class="lead">
+          「あのゲーム」（以下「本アプリ」）は、Yuki株式会社（以下「当方」）が提供します。本アプリは、遊ぶために氏名やメールアドレスの登録を求めません。このポリシーは、本アプリが実際に扱う情報だけを、扱う順に説明するものです。
+        </p>
+
+        <section>
+          <h2><span class="num">01</span>アカウントについて</h2>
+          <p>
+            本アプリにはサインアップ画面がありません。初回起動時に<strong>匿名アカウント</strong>が自動的に作られ、ランダムなID（UUID）が1つ割り当てられます。このIDにメールアドレス、パスワード、電話番号は一切結び付いていません。
+          </p>
+          <p>
+            このIDは、対戦相手とのマッチングと、あなたの対戦を他人の対戦と区別するためだけに使われます。
+          </p>
+          <div class="note">
+            <strong>ご注意：</strong>ログイン手段がないため、アプリのデータを消去した場合・アプリを削除した場合・ブラウザの保存データを消した場合、そのアカウントは復元できません。名前、戦績、所持している技はそこで失われます。
+          </div>
+        </section>
+
+        <section>
+          <h2><span class="num">02</span>当方のサーバーに保存される情報</h2>
+          <h3>プロフィール</h3>
+          <ul>
+            <li>あなたが入力した<strong>表示名</strong>（12文字以内）</li>
+            <li>選んだ<strong>カラー</strong>と<strong>構え（アバター）</strong></li>
+            <li>作成日時・更新日時</li>
+          </ul>
+          <p>
+            表示名・カラー・構えは、対戦画面で<strong>相手プレイヤーに表示されます</strong>。本名や、他人に知られたくない情報を表示名に入力しないでください。
+          </p>
+
+          <h3>対戦記録</h3>
+          <ul>
+            <li>対戦した2人のアカウントID、ライフとエネルギーの残り、ターン数、勝敗</li>
+            <li>各ターンで選ばれた手と、その解決結果</li>
+            <li>対戦の開始・終了時刻、マッチング待機の記録</li>
+          </ul>
+          <p>
+            対戦中に選んだ手は、両者が選び終わるまで相手からは読み取れない領域に保存されます。これはゲームの公平性のための仕組みであり、外部に公開されることはありません。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">03</span>端末の中だけに保存される情報</h2>
+          <p>
+            次の情報は、あなたの端末の中に保存されるだけで、<strong>当方のサーバーには送信されません</strong>。
+          </p>
+          <ul>
+            <li>音量などの各種設定、表示言語</li>
+            <li>戦績（対戦数・勝敗数）、経験値やレベルなどの進行状況</li>
+            <li>スタミナの残量と回復時刻</li>
+            <li>デッキ構成と保存したデッキ</li>
+            <li>広告の表示間隔を調整するためのカウンター（何試合終えたか、直近の表示時刻）</li>
+          </ul>
+          <p>
+            表示言語の初期値を決めるために、端末の言語設定を読み取ります。読み取るのは言語の種類だけで、記録も送信もしません。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">04</span>広告について</h2>
+          <p>
+            本アプリは、Google の <strong>AdMob</strong> を通じて広告を配信しています。表示されるのは、画面下部のバナー広告、対戦終了後のインタースティシャル広告、そしてスタミナと引き換えにあなたが自分で選んで再生するリワード広告です。
+          </p>
+          <p>
+            AdMob は広告の配信・表示回数の計測・不正クリックの防止のため、当方を経由せずに次のような情報を取得します。
+          </p>
+          <ul>
+            <li>広告識別子（Android の広告ID、iOS の IDFA）</li>
+            <li>IPアドレス、おおよその地域</li>
+            <li>端末の機種、OSのバージョン、言語設定</li>
+            <li>広告の表示・クリックの記録</li>
+          </ul>
+          <p>
+            これらの情報の取り扱いは Google のプライバシーポリシーに従います：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>（AdMob におけるデータ利用については<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">こちら</a>）。
+          </p>
+
+          <h3>同意と、広告を減らす方法</h3>
+          <ul>
+            <li>
+              <strong>EU・英国・スイスの方：</strong>初回起動時に Google のユーザーメッセージングプラットフォーム（UMP）による同意画面を表示します。パーソナライズ広告に同意しない選択ができ、その場合はパーソナライズされていない広告が表示されます。
+            </li>
+            <li>
+              <strong>iOS の方：</strong>同意画面のあとに、Apple のトラッキング許可（ATT）を求めます。「許可しない」を選んでも本アプリは通常どおり遊べます。
+            </li>
+            <li>
+              <strong>広告IDのリセット・無効化：</strong>Android は「設定 → プライバシー → 広告」、iOS は「設定 → プライバシーとセキュリティ → トラッキング」からいつでも変更できます。
+            </li>
+            <li>
+              <strong>広告そのものを消す：</strong>ショップの「広告オフ」をご購入いただくと、バナー広告とインタースティシャル広告が表示されなくなります。
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">05</span>購入について</h2>
+          <p>
+            アプリ内購入の決済は、すべて Apple の App Store または Google Play が処理します。<strong>当方がクレジットカード番号などの決済情報を受け取ることはありません</strong>。当方が知るのは、購入が完了したかどうかだけです。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">06</span>情報を渡している事業者</h2>
+          <p>本アプリを動かすために、次の事業者を利用しています。</p>
+          <div class="partners">
+            <div>
+              <b>Google AdMob</b>
+              <span>広告の配信。<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></span>
+            </div>
+            <div>
+              <b>Supabase</b>
+              <span>アカウント・プロフィール・対戦記録の保存。<a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></span>
+            </div>
+            <div>
+              <b>Vercel</b>
+              <span>ウェブ版の配信。<a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></span>
+            </div>
+            <div>
+              <b>Apple / Google</b>
+              <span>アプリの配信と決済。各社のプライバシーポリシーに従います。</span>
+            </div>
+          </div>
+          <p>
+            <strong>当方は、あなたの情報を販売しません。</strong>また、広告以外の目的で第三者に提供することもありません。法令に基づく開示請求があった場合を除きます。
+          </p>
+          <p>
+            これらの事業者のサーバーは日本国外に所在する場合があります。本アプリをご利用いただくことで、国外への情報の移転に同意いただいたものとします。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">07</span>保存期間</h2>
+          <ul>
+            <li>アカウントとプロフィールは、削除のご依頼をいただくまで保存します。</li>
+            <li>対戦記録は、対戦の再開・不正の確認のために保存し、アカウントを削除すると同時に削除されます。</li>
+            <li>端末内のデータは、アプリを削除した時点で消えます。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">08</span>あなたの権利</h2>
+          <p>次のご依頼を受け付けます。お問い合わせ先は末尾に記載しています。</p>
+          <ul>
+            <li><strong>削除：</strong>アカウント、プロフィール、対戦記録の削除。</li>
+            <li><strong>開示：</strong>当方が保存しているあなたの情報の写しの提供。</li>
+            <li><strong>訂正：</strong>表示名は、アプリ内でいつでも変更できます。</li>
+          </ul>
+          <p>
+            ログイン手段がないため、削除のご依頼にはアプリ内で確認できる<strong>アカウントID</strong>を添えてください。IDの照合ができない場合、そのアカウントを特定できず、ご依頼にお応えできません。
+          </p>
+          <p>
+            なお、端末上でアプリのデータを消去すれば、端末内の情報はその場ですべて失われます。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">09</span>お子様の利用について</h2>
+          <p>
+            本アプリは<strong>13歳未満の方を対象としていません</strong>。当方が13歳未満の方の情報を意図的に取得することはありません。もし13歳未満のお子様の情報が保存されていることが判明した場合、確認のうえ削除します。お心当たりのある保護者の方は、末尾の連絡先までご連絡ください。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span>安全管理</h2>
+          <p>
+            サーバーとの通信はすべて暗号化されています。対戦記録には行レベルセキュリティを設定しており、自分が参加した対戦以外は読み取れません。ただし、インターネット上の通信および保存に、絶対的な安全性はありません。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span>本ポリシーの変更</h2>
+          <p>
+            内容を変更する場合は、このページを更新し、冒頭の「最終更新」の日付を書き換えます。取得する情報の種類が増えるなど重要な変更を行う場合は、アプリ内でお知らせします。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">12</span>お問い合わせ</h2>
+          <p>
+            本ポリシーおよび個人情報の取り扱いに関するご連絡は、次の宛先へお願いします。
+          </p>
+          <p>
+            Yuki株式会社<br />
+            <a href="mailto:sakuseed0327@gmail.com">sakuseed0327@gmail.com</a>
+          </p>
+        </section>
+      </div>
+
+      <!-- ================= English ================= -->
+      <div id="doc-en" lang="en" hidden>
+        <p class="lead">
+          AnoGame (“the app”) is made by Yuki K.K. (“we”). The app
+          never asks for your name or your email address in order to play. This policy describes
+          only what the app actually handles, in the order it handles it.
+        </p>
+
+        <section>
+          <h2><span class="num">01</span>Your account</h2>
+          <p>
+            There is no sign-up screen. The first time you open the app it creates an
+            <strong>anonymous account</strong> and assigns it one random ID (a UUID). No email
+            address, password, or phone number is attached to that ID.
+          </p>
+          <p>
+            The ID is used only to pair you with an opponent and to tell your matches apart from
+            everyone else's.
+          </p>
+          <div class="note">
+            <strong>Worth knowing:</strong> because there is nothing to sign back in with, clearing
+            the app's data, deleting the app, or clearing your browser storage loses the account for
+            good. Your name, your record, and the techniques you have unlocked go with it.
+          </div>
+        </section>
+
+        <section>
+          <h2><span class="num">02</span>What we store on our servers</h2>
+          <h3>Your profile</h3>
+          <ul>
+            <li>The <strong>display name</strong> you typed (up to 12 characters)</li>
+            <li>The <strong>colour</strong> and <strong>stance</strong> you picked</li>
+            <li>When the profile was created and last changed</li>
+          </ul>
+          <p>
+            Your name, colour, and stance are <strong>shown to your opponent</strong> during a
+            match. Please don't use your real name, or anything you would not want another player to
+            read.
+          </p>
+
+          <h3>Match records</h3>
+          <ul>
+            <li>The two account IDs in the match, lives and energy remaining, turn number, winner</li>
+            <li>The move chosen each turn and how it resolved</li>
+            <li>When the match started and ended, and matchmaking queue entries</li>
+          </ul>
+          <p>
+            The move you pick during a turn is held where your opponent cannot read it until you
+            have both committed. That is a fairness mechanism in the game; it is never published.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">03</span>What stays on your device</h2>
+          <p>
+            The following is kept on your device only and is <strong>never sent to our
+            servers</strong>:
+          </p>
+          <ul>
+            <li>Your settings, including volumes and language</li>
+            <li>Your record (matches, wins, losses) and your level and experience</li>
+            <li>Your stamina and when it next refills</li>
+            <li>Your deck and any decks you have saved</li>
+            <li>Counters that pace the ads — how many matches you have finished, when one last showed</li>
+          </ul>
+          <p>
+            The app reads your device's language setting once, to decide which language to start in.
+            It reads the language and nothing else, and does not record or transmit it.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">04</span>Advertising</h2>
+          <p>
+            The app shows ads through Google <strong>AdMob</strong>: a banner at the bottom of the
+            screen, an interstitial after a match ends, and rewarded videos that you choose to watch
+            in exchange for stamina.
+          </p>
+          <p>
+            To serve those ads, measure them, and detect click fraud, AdMob collects the following
+            directly — it does not pass through us:
+          </p>
+          <ul>
+            <li>Your advertising identifier (Advertising ID on Android, IDFA on iOS)</li>
+            <li>Your IP address and approximate location</li>
+            <li>Device model, OS version, and language</li>
+            <li>Records of which ads were shown and clicked</li>
+          </ul>
+          <p>
+            Google handles this under its own privacy policy:
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
+            (and specifically for
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">how AdMob uses data</a>).
+          </p>
+
+          <h3>Consent, and how to see fewer ads</h3>
+          <ul>
+            <li>
+              <strong>In the EEA, UK, and Switzerland:</strong> on first launch the app shows
+              Google's User Messaging Platform consent form. You can refuse personalised ads, and
+              you will be shown non-personalised ones instead.
+            </li>
+            <li>
+              <strong>On iOS:</strong> after that form, the app asks for Apple's App Tracking
+              Transparency permission. Choosing “Ask App Not to Track” does not affect the game.
+            </li>
+            <li>
+              <strong>Reset or disable your advertising ID:</strong> Android — Settings → Privacy →
+              Ads. iOS — Settings → Privacy &amp; Security → Tracking.
+            </li>
+            <li>
+              <strong>Remove the ads entirely:</strong> the “ads off” purchase in the shop stops the
+              banner and the interstitial.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">05</span>Purchases</h2>
+          <p>
+            In-app purchases are processed entirely by Apple's App Store or Google Play.
+            <strong>We never see or receive your card number or any other payment details.</strong>
+            All we learn is whether a purchase went through.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">06</span>Who else receives data</h2>
+          <p>The app runs on these services:</p>
+          <div class="partners">
+            <div>
+              <b>Google AdMob</b>
+              <span>Serves the ads. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></span>
+            </div>
+            <div>
+              <b>Supabase</b>
+              <span>Stores accounts, profiles, and match records. <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Privacy policy</a></span>
+            </div>
+            <div>
+              <b>Vercel</b>
+              <span>Hosts the web version. <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy policy</a></span>
+            </div>
+            <div>
+              <b>Apple / Google</b>
+              <span>Distribute the app and process payments, under their own policies.</span>
+            </div>
+          </div>
+          <p>
+            <strong>We do not sell your data</strong>, and we do not share it with anyone else for
+            any purpose other than the advertising described above, except where the law requires us
+            to disclose it.
+          </p>
+          <p>
+            These providers' servers may be located outside your country. By using the app you agree
+            to your information being transferred and stored there.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">07</span>How long we keep it</h2>
+          <ul>
+            <li>Accounts and profiles are kept until you ask us to delete them.</li>
+            <li>
+              Match records are kept so matches can be resumed and cheating can be checked, and are
+              deleted along with the account they belong to.
+            </li>
+            <li>Anything on your device is gone the moment you delete the app.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="num">08</span>Your rights</h2>
+          <p>You can ask us to do any of the following, at the address at the bottom of this page:</p>
+          <ul>
+            <li><strong>Delete</strong> your account, your profile, and your match records.</li>
+            <li><strong>Send you a copy</strong> of what we hold about you.</li>
+            <li><strong>Correct it</strong> — your display name can be changed in the app at any time.</li>
+          </ul>
+          <p>
+            Because there is no login, a deletion request must include the
+            <strong>account ID</strong> shown in the app. Without an ID we can match, we cannot
+            identify the account and cannot act on the request.
+          </p>
+          <p>
+            Clearing the app's data on your device removes everything held on the device
+            immediately, without asking us.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">09</span>Children</h2>
+          <p>
+            The app is <strong>not directed to children under 13</strong>, and we do not knowingly
+            collect information from them. If we learn that we hold information from a child under
+            13, we will verify and delete it. Parents and guardians who believe this has happened
+            should contact us at the address below.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">10</span>Security</h2>
+          <p>
+            All traffic to our servers is encrypted. Match records are protected by row-level
+            security, so a player can only read matches they took part in. No transmission or
+            storage over the internet is ever completely secure.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">11</span>Changes to this policy</h2>
+          <p>
+            If this policy changes we will update this page and change the “Last updated” date at
+            the top. If a change is significant — new kinds of information collected, for example —
+            we will tell you inside the app.
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="num">12</span>Contact</h2>
+          <p>For anything about this policy or your data, write to:</p>
+          <p>
+            Yuki K.K.<br />
+            <a href="mailto:sakuseed0327@gmail.com">sakuseed0327@gmail.com</a>
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <p>あのゲーム / AnoGame — <code>com.anogame.app</code></p>
+        <a class="back" href="index.html">&larr; アプリ一覧に戻る / Back to all apps</a>
+      </footer>
+    </main>
+
+    <script>
+      /*
+       * Both languages are in the document, so a reader with no JavaScript — or
+       * a store reviewer's crawler — still sees the whole policy rather than
+       * half of it. The switch only hides one of the two.
+       */
+      (function () {
+        var ja = document.getElementById('doc-ja');
+        var en = document.getElementById('doc-en');
+        var btnJa = document.getElementById('btn-ja');
+        var btnEn = document.getElementById('btn-en');
+
+        function show(lang) {
+          var japanese = lang === 'ja';
+          ja.hidden = !japanese;
+          en.hidden = japanese;
+          btnJa.setAttribute('aria-pressed', String(japanese));
+          btnEn.setAttribute('aria-pressed', String(!japanese));
+          document.documentElement.lang = lang;
+          window.scrollTo(0, 0);
+        }
+
+        btnJa.addEventListener('click', function () {
+          show('ja');
+        });
+        btnEn.addEventListener('click', function () {
+          show('en');
+        });
+
+        // Open in whichever language the reader's device speaks.
+        var prefers = (navigator.languages || [navigator.language || 'ja'])[0] || 'ja';
+        show(prefers.toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en');
+      })();
+    </script>
+  </body>
+</html>
